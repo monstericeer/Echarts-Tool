@@ -1,0 +1,52 @@
+#container {
+  display: flex;
+  flex-grow: row wrap;
+  width: 80%;
+  height: 700px;
+  border: 2px solid #DCDCDC;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tool-box, #droppable {
+  padding: 15px;
+}
+
+.tool-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 350px;
+  overflow-y: auto;
+  border-right: 2px solid #DCDCDC;
+}
+
+#droppable {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100% - 312px);
+  overflow-y: auto;
+}
+
+.tool-item {
+  width: 150px;
+  height: 150px;
+  margin: 0 15px 15px 0;
+}
+
+.tool-item-img {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  display: none;
+}
+.tool-item-img:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
