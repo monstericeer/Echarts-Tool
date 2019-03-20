@@ -1,3 +1,7 @@
+/**
+ *  包含工具拖拽创建，渲染，放大缩小等逻辑
+ */
+
 // 存放所有新增的实例
 let optionArr = [];
 
@@ -40,7 +44,7 @@ $( "#droppable" ).droppable({
       // 饼图
       case 'tool-pie':
         //ui-widget-content (className => 加边框)
-        const TEMP = `<div id='${randomId}' class='view-item tool-item ui-widget-content'></div>`;
+        const TEMP = `<div id='${randomId}' class='view-item tool-item'></div>`;
         $( this ).append(TEMP);
         
         // 画图
